@@ -6,6 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    Welcome to albums!
+    <% albumsArray.forEach(function(album) { %>
+        <li>
+            <%= album.name %>
+            -
+            <%= album.artist %>
+        </li>
+    <% }) %>
 </body>
 </html>
